@@ -13,28 +13,45 @@
            margin:0 auto;
            padding: 16px;
            display: block;             
-
-
         }
         main{
             background-color:coral;
-            
-        
-
-
+            color: black;
+            text-align: center;
+            max-width:fit-content;
+            margin: 10px;;
         }
         img{
            width: 550px;
-
-
-
         }
+        .conteudo {
+line-height: 1.8;
+        }
+.artigo-autor {
+font-weight: bold;
+margin-top: 20px;
+color: #132cbb;
+}
+        button {
+font-size: 24px;
+padding: 8px 16px;
+background-color: #819c99;
+color: white;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+margin-top: 15px;
+}
+     button:hover {
+background-color: #5f7a77;
+
+     }
     </style>
 </head>
 <body> 
     <header> 
         <h1>Um idiota fazendo um blog de um jogo.</h1>
-        <p>Hoje eu irei expplicar um jogo que me marcou muito e eu gosto muito. Sem enrolação bora. </p>
+        <p>Hoje eu irei explicar um jogo que me marcou muito e eu gosto muito. Sem enrolação bora. </p>
     </header>
     <main>
            <h2>Como o jogo funciona</h2> 
@@ -54,13 +71,34 @@
       
         </main>
            <h2>Safe Shallows</h2>
-<div>   <img src="lugares seguros"  alt="lugares seguros"
+   <img src="lugares seguros"  alt="lugares seguros"
       
       
-    <h2> Esse é um dos biomas mais seguros do jogo. Como seu nome diz "Águas Seguras" esse bioma não tem nenhum inimgo que possa te fazer algum mal. E é nesse bioma onde o lifepod do nosso protagonista cai</h2>
-        
-    </div>
-
+    <p>Esse é um dos biomas mais seguros do jogo. Como seu nome diz "Águas Seguras" esse bioma não tem nenhum inimgo que possa te fazer algum mal. E é nesse bioma onde o lifepod do nosso protagonista cai, nesse bioma não tem inimigos
+       capazes de te matar, ele tem os recurosos inicias como, titanio, cobre, quartzo e sucata </p>
+       
+    
+    <p class="artigo-autor">Por:Augusto</p>
+      <button>👍🏻<span>0</span></button>
+       <button>👎🏻<span>0</span></button>
+       
 
 </body>
+<script>
+const botoes = document.querySelectorAll("button");//variável para acessar o botão.
+
+botoes.forEach(function(botao){
+botao.addEventListener("click", botaoClicado);//quando acontecer um clique, será executada uma função chamada botaoClicado.
+
+    
+});
+botao.addEventListener("click", botaoClicado);//quando acontecer um clique, será executada uma função chamada botaoClicado.
+
+function botaoClicado() { //cria uma função chamada botaoClicado.
+console.log("fui clicado");// exibe uma mensagem no console.
+let texto = botao.querySelector("span");////seleciona o elemento "span" que esta dentro do botão e o guarda na variavel texto.
+texto.textContent++;// soma 1 ao valor atual. Assim, o contador aumenta a cada clique.
+
+}
+</script>
 </html>

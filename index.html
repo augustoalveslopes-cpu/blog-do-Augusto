@@ -46,6 +46,14 @@ margin-top: 15px;
 background-color: #5f7a77;
 
      }
+body{
+  background-color: aqua;
+  text-align: center;
+
+
+
+
+}
     </style>
 </head>
 <body> 
@@ -54,6 +62,9 @@ background-color: #5f7a77;
         <p>Hoje eu irei explicar um jogo que me marcou muito e eu gosto muito. Sem enrolação bora. </p>
     </header>
     <main>
+     <article>
+      <div>
+       
            <h2>Como o jogo funciona</h2> 
           
  
@@ -62,43 +73,40 @@ background-color: #5f7a77;
          O proagonista do jogo se chama Ryley Robinson. Antes da nava colidir com o planeta ele entra numa capsula de fuga, que em subnautica se chamam "Lifepod". No entanto, quando ele estava no lifepod um pedaço de metal acaba
          acertando ele e deixa ele desacordado. Após acordar, Ryley ve seu lifepod pegando fogo, então ele sai de seu acento e o jogo começa.Nesse planeta existem diferentes biomas e cada um com sua fauna diversificada, com 
           muitos animais pacíficos, mas alguns não gostam de sua presença lá. Então eu irei começar </p>
-         
       <img src="mapa foda" alt="mapa gigante do jogo">       
 
-     
+  
       
-      
-      
-        </main>
+        
+       </article>
+      </main>
+        
+
            <h2>Safe Shallows</h2>
-   <img src="lugares seguros"  alt="lugares seguros"
-      
-      
+   
     <p>Esse é um dos biomas mais seguros do jogo. Como seu nome diz "Águas Seguras" esse bioma não tem nenhum inimgo que possa te fazer algum mal. E é nesse bioma onde o lifepod do nosso protagonista cai, nesse bioma não tem inimigos
-       capazes de te matar, ele tem os recurosos inicias como, titanio, cobre, quartzo e sucata </p>
-       
+       capazes de te matar, ele tem os recurosos inicias como, titanio, cobre, quartzo e sucata. Ele tambem faz divisa com mais 2 biomas, Grassy plateaus e Kelp forest.</p>
+       <img src="lugares seguros" alt="um lugar seguro">
     
+
+
     <p class="artigo-autor">Por:Augusto</p>
       <button>👍🏻<span>0</span></button>
        <button>👎🏻<span>0</span></button>
-       
 
 </body>
 <script>
-const botoes = document.querySelectorAll("button");//variável para acessar o botão.
+  const botoes = document.querySelectorAll("button");//variável para acessar o botão
 
-botoes.forEach(function(botao){
-botao.addEventListener("click", botaoClicado);//quando acontecer um clique, será executada uma função chamada botaoClicado.
+    botoes.forEach(function(botao){
+    botao.addEventListener("click", botaoClicado);//quando acontecer um clique, será executada uma função chamada botaoClicado.
 
-    
-});
-botao.addEventListener("click", botaoClicado);//quando acontecer um clique, será executada uma função chamada botaoClicado.
-
-function botaoClicado() { //cria uma função chamada botaoClicado.
+    function botaoClicado() {//cria uma função chamada botaoClicado.
 console.log("fui clicado");// exibe uma mensagem no console.
-let texto = botao.querySelector("span");////seleciona o elemento "span" que esta dentro do botão e o guarda na variavel texto.
-texto.textContent++;// soma 1 ao valor atual. Assim, o contador aumenta a cada clique.
-
+let texto = botao.querySelector("span");///seleciona o elemento "span" que esta dentro do botão e o guarda na variavel texto.
+texto.textContent++;//soma 1 ao valor atual. Assim, o contador aumenta a cada clique.
 }
+}
+)
 </script>
 </html>
